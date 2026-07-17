@@ -1,0 +1,4 @@
+# Provedores de Fallback - Sentinela v50.1
+# Removidos provedores inoperantes (Zhipu, Google Gemini sem chave, etc.)
+fallback_providers:
+  []

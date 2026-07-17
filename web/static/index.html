@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimrod | Web Interface</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+    
+    <main class="container">
+        <header>
+            <h1>Nimrod</h1>
+            <p>Análise Pericial de Perfis no Instagram</p>
+        </header>
+
+        <section class="input-section glass-panel">
+            <form id="analyze-form">
+                <div class="input-wrapper">
+                    <span class="at-symbol">@</span>
+                    <input type="text" id="target-input" placeholder="usuario" required autocomplete="off" autofocus>
+                </div>
+                <button type="submit" id="start-btn" class="btn-primary">
+                    <span class="btn-text">Iniciar Análise</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+        </section>
+
+        <section class="progress-section glass-panel hidden" id="progress-container">
+            <div class="progress-steps">
+                <div class="step" data-step="coleta">
+                    <div class="step-icon">1</div>
+                    <span>Coleta</span>
+                </div>
+                <div class="step" data-step="classificacao">
+                    <div class="step-icon">2</div>
+                    <span>Classificação</span>
+                </div>
+                <div class="step" data-step="linguistica">
+                    <div class="step-icon">3</div>
+                    <span>Linguística</span>
+                </div>
+                <div class="step" data-step="comportamento">
+                    <div class="step-icon">4</div>
+                    <span>Comportamento</span>
+                </div>
+                <div class="step" data-step="relatorio">
+                    <div class="step-icon">5</div>
+                    <span>Relatório</span>
+                </div>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-bar-fill"></div>
+            </div>
+        </section>
+
+        <section class="terminal-section glass-panel">
+            <div class="terminal-header">
+                <div class="dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="terminal-title">Process Logs</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="log-line system-msg">Aguardando comando...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

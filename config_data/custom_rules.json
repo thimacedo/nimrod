@@ -1,0 +1,54 @@
+{
+  "additional_rules": [
+    "LEETSPEAK e OBFUSCAÇÃO: Substituições como 'V5RM5', 'LĪX0' e 'V44G4BUND0' são artifícios para burlar filtros. Trate-os pelo seu significado real (VERME, LIXO, VAGABUNDO) e classifique como INSULTO_AD_HOMINEM.",
+    "FALSA EQUIVALÊNCIA MORAL: Usar a palavra 'crime' ou 'aberração' em contexto de identidade de gênero ou orientação sexual (ex: 'ser gay não é crime mas aceitar aberração') É ODIO_IDENTITARIO. A associação de minorias à criminalidade não é opinião política.",
+    "Considerar contexto cultural e social para evitar falsos positivos em ofensas raciais e religiosas",
+    "Analisar a intenção por trás das palavras para diferenciar insultos ad hominem de críticas construtivas",
+    "Considerar ataques a instituições democráticas como ATAQUE_INSTITUCIONAL",
+    "Identificar deslegitimação de órgãos de Estado como ATAQUE_INSTITUCIONAL"
+  ],
+  "mitigate_false_positives": [
+    "Textos que contêm parabéns, feliz aniversário ou desejos de felicidades são NEUTRO, a menos que contenham ataques explícitos",
+    "Expressões de agradecimento ou saudações benignas (ex: 'Deus abençoe', 'Bom dia') devem ser marcadas como NEUTRO",
+    "Evitar marcação de expressões comuns em comunidades específicas como ofensivas sem contexto",
+    "Não marcar como 'DANO_A_IMAGEM' críticas construtivas",
+    "Não classificar linguagem que visa desafiar estruturas sociais existentes como ofensiva"
+  ],
+  "custom_keywords": {
+    "ODIO_IDENTITARIO": [
+      "aberração",
+      "doença",
+      "racista",
+      "xenofobia",
+      "homofobia",
+      "transfobia"
+    ],
+    "VIOLENCIA_GENERO": [
+      "machista",
+      "misoginia"
+    ],
+    "AMEACA": [
+      "morte",
+      "matar",
+      "destruir"
+    ],
+    "INSULTO_AD_HOMINEM": [
+      "verme",
+      "lixo",
+      "vagabundo",
+      "idiota",
+      "imbecil",
+      "covarde"
+    ],
+    "ATAQUE_INSTITUCIONAL": [
+      "corrupto",
+      "deslegitimar",
+      "corrupção"
+    ],
+    "DANO_A_IMAGEM": [
+      "crime",
+      "corrupção",
+      "fake news"
+    ]
+  }
+}
